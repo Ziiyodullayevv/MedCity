@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+
+:root {
+  /* Mafiya colors: */
+  /* --bg: #000102;
+  --bg-card-1: #161520;
+  --bg-card-2: #121922;
+  --text-1: #abc7ff; */
+
+  /* Medcity colors:  */
+  --primary-light: #788fc8;
+  --primary-main: #283b6a;
+  --primary-dark: #0e204d;
+  --secondary-light: #21cdc0;
+  --Montserrat: " Montserrat ", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  color: white;
+  background-color: var(--bg);
 }

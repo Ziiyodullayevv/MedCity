@@ -1,0 +1,22 @@
+.sub-nav__icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-nav__icon:hover {
+  background-color: white;
+}
+
+.line {
+  transition: all 0.3s ease-in-out;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-light);
+}
+
+img {
+  max-width: 150px;
+}
