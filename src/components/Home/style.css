@@ -1,0 +1,16 @@
+.home-icon__box {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; */
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-icon__box:hover {
+  margin-top: -10px;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.058);
+}

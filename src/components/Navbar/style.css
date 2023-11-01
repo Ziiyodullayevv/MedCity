@@ -20,3 +20,12 @@
 img {
   max-width: 150px;
 }
+
+.box-shadow {
+  background-color: white;
+  top: 0;
+  width: 100%;
+  position: sticky;
+  z-index: 333;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}

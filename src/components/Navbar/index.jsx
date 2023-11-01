@@ -73,7 +73,7 @@ const Navbar = () => {
     <React.Fragment>
       <SubNavbar />
 
-      <Box sx={{ borderBottom: "1px solid black" }} component={"header"}>
+      <Box className="box-shadow" component={"header"}>
         <Container>
           <Box
             sx={{
@@ -145,7 +145,7 @@ const Navbar = () => {
                       size="large"
                       onClick={toggleDrawer(anchor, true)}
                     >
-                      <Menu />
+                      <Menu fontSize="large" />
                     </IconButton>
                     <Drawer
                       anchor={anchor}

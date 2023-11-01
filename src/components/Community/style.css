@@ -1,0 +1,19 @@
+.sub-navbar {
+  background-color: var(--primary-main);
+  padding: 5px;
+}
+
+.sub-nav__icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-nav__icon:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.315);
+}
+
+.tel:hover a,
+.tel:hover .tel__icon {
+  color: var(--secondary-light) !important;
+  cursor: pointer;
+}

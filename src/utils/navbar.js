@@ -1,9 +1,26 @@
+import { lazy } from "react";
+import React from "react";
+import Spiner from "../components/Spiner";
+
+// React.lazy pages:
+const Home = lazy(() => import("../pages/HomePage"));
+
 export const navbar = [
   {
     id: 1,
     title: "Home",
     path: "/home",
-    element: <h1>Hello 1</h1>,
+    element: (
+      <React.Suspense
+        fallback={
+          <React.Fragment>
+            <Spiner />
+          </React.Fragment>
+        }
+      >
+        <Home />
+      </React.Suspense>
+    ),
     private: false,
     hidden: false,
   },
@@ -11,7 +28,17 @@ export const navbar = [
     id: 2,
     title: "About Us",
     path: "/about",
-    element: <h1>Hello 2</h1>,
+    element: (
+      <React.Suspense
+        fallback={
+          <React.Fragment>
+            <h1>How are you</h1>
+          </React.Fragment>
+        }
+      >
+        <h1>Home 2</h1>
+      </React.Suspense>
+    ),
     private: false,
     hidden: false,
   },

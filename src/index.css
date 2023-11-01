@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 :root {
   /* Mafiya colors: */
   /* --bg: #000102;
   --bg-card-1: #161520;
   --bg-card-2: #121922;
-  --text-1: #abc7ff; */
+  --text-1: #abc7ff; 
 
   /* Medcity colors:  */
+  --text-1: #abc7ff;
   --primary-light: #788fc8;
-  --primary-main: #283b6a;
-  --primary-dark: #0e204d;
+  --primary-main: #475b8d;
+  --primary-dark: #1d3060;
   --secondary-light: #21cdc0;
   --Montserrat: " Montserrat ", sans-serif;
+  --Quicksand: "Quicksand", sans-serif;
 }
 
 * {
@@ -23,7 +25,23 @@
   list-style: none;
 }
 
-body {
-  color: white;
-  background-color: var(--bg);
+section {
+  padding: 70px 0;
+}
+
+.heading__wrapper {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.heding__title {
+  color: var(--primary-dark);
+  font-family: var(--Quicksand) !important;
+  font-weight: 700 !important;
+}
+
+.heding__subtitle {
+  color: var(--primary-main) !important;
+  font-weight: 700 !important;
 }

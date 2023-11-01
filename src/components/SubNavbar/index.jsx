@@ -35,6 +35,7 @@ const subtTitle = {
   fontSize: "11px",
   fontWeight: "300",
   gap: "5px",
+  color: "white",
   alignItems: "center",
   cursor: "pointer",
 };
@@ -81,7 +82,7 @@ const SubNavbar = () => {
 
   return (
     <Box
-      sx={{ display: { xs: "none", md: "none", lg: "block" } }}
+      sx={{ display: { xs: "none", md: "block" } }}
       className="sub-navbar"
       component={"div"}
     >
@@ -126,6 +127,7 @@ const SubNavbar = () => {
                 placement="bottom-start"
                 transition
                 disablePortal
+                sx={{ position: "relative", zIndex: 99999 }}
               >
                 {({ TransitionProps, placement }) => (
                   <Grow
